@@ -1,7 +1,11 @@
 #Freeboard Dashboard for Node-RED
 
 #Installation
-Just install this plugin to your Node Red installation by using npm: "npm install node-red-contrib-freeboard" in your Node Red root directory
+ cd ~/.node-red  
+ git clone https://github.com/Freeboard/freeboard.git  
+ npm install freeboard  
+ git clone https://github.com/tdrewett/node-red-contrib-freeboard.git  
+ npm install node-red-contrib-freeboard  
 
 #Usage
 Drag the freeboard node into your workspace and connect it appropriatley with some JSON emitting node.
