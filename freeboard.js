@@ -98,7 +98,7 @@ module.exports = function(RED) {
 	);
 	RED.httpNode.get("/freeboard_api/datasourceupdate",
 		function (req,res){
-			if(req.param("direct",false)){
+			if(req.query.direct == undefined){
 				var ret={};
 				for (var i in nodes){
 					ret[nodes[i].id]=nodes[i].lastValue;
